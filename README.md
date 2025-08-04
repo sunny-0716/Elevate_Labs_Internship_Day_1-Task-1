@@ -22,17 +22,18 @@ This project involves performing a network scan using **Nmap** to identify activ
 
  🔄 Steps Performed
 
+
 1. **Install Nmap** from the official [Nmap download page](https://nmap.org/download.html).
 2. **Identify local IP address** using:
    ```bash
    ipconfig   # (Windows) or ifconfig / ip a (Linux)
 ````
 
-3. Determine subnet range (e.g., for `192.168.29.168` with subnet mask `255.255.224.0`, CIDR = `/19`)
+3. Determine subnet range (e.g., for `172.168.22.111` with subnet mask `255.255.224.0`, CIDR = `/19`)
 4. Run a TCP SYN scan on the host:
 
    ```
-   nmap -sS 192.168.29.168
+   nmap -sS 172.168.22.111
    ```
 5. Review open ports and running services.
 6. Research common services using:
@@ -43,7 +44,7 @@ This project involves performing a network scan using **Nmap** to identify activ
 8. Export results to a file:
 
    ```
-   nmap -sS 192.168.29.168 -oN scan_results.txt
+   nmap -sS 172.168.22.111 -oN scan_results.txt
    ```
 
 
@@ -55,7 +56,7 @@ This project involves performing a network scan using **Nmap** to identify activ
 * 📜 Investigate unknown ports (like 8089) using:
 
   ```
-  nmap -sV -sC 192.168.29.168
+  nmap -sV -sC 172.168.22.111
   ```
  🛠️ Run vulnerability scans using tools like Nessus or OpenVAS.
  👁️‍🗨️ Monitor port usage with `netstat -aon` or endpoint protection.
