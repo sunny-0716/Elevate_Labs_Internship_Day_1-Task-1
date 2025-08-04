@@ -21,8 +21,6 @@ This project involves performing a network scan using **Nmap** to identify activ
 ---
 
  🔄 Steps Performed
-
-
 1. **Install Nmap** from the official [Nmap download page](https://nmap.org/download.html).
 2. **Identify local IP address** using:
    ```bash
